@@ -5,6 +5,7 @@ void setup() {
 void draw() {  
   drawBlueSquare();
   drawCircleAtMouse(255, 60, 125);
+  drawRandomEllipses();
 }
 
 void drawBlueSquare() {
@@ -15,4 +16,10 @@ void drawBlueSquare() {
 void drawCircleAtMouse(float r, float g, float b) {
   fill(r, g, b);
   ellipse(mouseX, mouseY, 30, 30);
+}
+
+void drawRandomEllipses() {
+  fill(random(255), random(152));
+  ellipse(random(0,600), random(0,600), random(0,600), random(0,600));
+  
 }
